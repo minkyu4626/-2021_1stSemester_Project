@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="65dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PNU.GG"
+            android:textSize="50sp"
+            android:layout_marginBottom="40dp"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_loginPage_id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID" />
+
+            <EditText
+                android:id="@+id/EditText_loginPage_IDInput"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_loginPage_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password" />
+            <EditText
+                android:id="@+id/EditText_loginPage_PasswordInput"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:password="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextView_loginPage_validUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/Button_loginPage_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아직 회원이 아니신가요?"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/Button_loginPage_singUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sing Up"/>
+    </LinearLayout>
+
+</ScrollView>

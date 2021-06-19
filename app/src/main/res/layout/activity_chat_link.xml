@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Board_chat_link"
+    android:padding="0dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="작성자 정보"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:background="#294174"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:background="#F2F2F2"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/image_main_tier"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stretchColumns="0">
+                <TableRow
+                    android:weightSum="10">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="소환사명"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="랭크 구분"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="승"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="패"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:text="승률"
+                        android:textSize="12dp" />
+                </TableRow>
+                <TableRow
+                    android:weightSum="10"
+                    android:layout_marginBottom="3dp">
+                    <TextView
+                        android:id="@+id/Text_main_summoner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.5"
+                        android:text="소환사명"
+                        android:textColor="#393434"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/Text_main_rank_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="랭크 구분"
+                        android:textColor="#393434"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/TextView_wins"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="승"
+                        android:textColor="#393434"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/TextView_loses"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="패"
+                        android:textSize="12dp"
+                        android:textColor="#393434"/>
+                    <TextView
+                        android:id="@+id/TextView_winRate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:text="승률"
+                        android:textColor="#393434"
+                        android:textSize="12dp"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="한마디"
+                        android:textSize="12dp" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/Text_main_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="content"
+                        android:textSize="12dp"
+                        android:textColor="#393434"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이 유저와 채팅하기"
+            android:id="@+id/button_chat_link"
+            android:layout_marginHorizontal="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_reboard"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1000"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/recyclerview_reboard"
+            android:layout_marginHorizontal="10dp">
+
+
+            <EditText
+                android:id="@+id/msg_input_reboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="댓글을 입력하세요"
+                />
+
+            <Button
+                android:id="@+id/sendBtn_reboard"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_edit"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

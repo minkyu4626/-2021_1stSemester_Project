@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="Sign Up!!"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="30dp"
+            android:background="@color/purple_700"/>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+            <TextView
+                android:id="@+id/TextView_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="15sp"
+                android:layout_marginRight="50dp"/>
+            <TextView
+                android:id="@+id/TextView_ID_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용할 ID (최대 16자)"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/TextView_ID"
+                android:maxLines="1"
+                android:maxLength="16"/>
+
+            <EditText
+                android:id="@+id/EditText_ID"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView_ID"
+                android:layout_marginTop="-2dp" />
+
+            <Button
+                android:id="@+id/Button_ID_check"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/EditText_ID"
+                android:layout_below="@+id/TextView_ID"
+                android:text="check"
+                android:textSize="8sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+            <TextView
+                android:id="@+id/TextView_Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="15sp"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:id="@+id/TextView_Password_valid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8~16자리 비밀번호 입력"
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/TextView_Password"/>
+            <EditText
+                android:id="@+id/EditText_Password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView_Password"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:password="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+            <TextView
+                android:id="@+id/TextView_PasswordCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P/W Check"
+                android:textSize="15sp"
+                android:layout_marginRight="50dp"/>
+            <TextView
+                android:id="@+id/TextView_PasswordCheck_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/TextView_PasswordCheck"/>
+            <EditText
+                android:id="@+id/EditText_PasswordCheck"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView_PasswordCheck"
+                android:maxLines="1"
+                android:maxLength="16"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:password="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp">
+            <TextView
+                android:id="@+id/TextView_lolName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소환사 이름"
+                android:textSize="15sp"
+                android:layout_marginRight="50dp"/>
+            <TextView
+                android:id="@+id/TextView_lolName_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소환사 이름 입력"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/TextView_lolName"/>
+            <EditText
+                android:id="@+id/EditText_lolName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView_lolName"
+                />
+            <Button
+                android:id="@+id/Button_lolName_check"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/TextView_lolName"
+                android:layout_toRightOf="@+id/EditText_lolName"
+                android:text="check"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Button_signUpPage_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입하기" />
+    </LinearLayout>
+
+</ScrollView>

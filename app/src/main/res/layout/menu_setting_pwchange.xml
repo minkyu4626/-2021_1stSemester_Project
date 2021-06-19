@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="비밀번호 변경"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:id="@+id/TextView_ChangePW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="변경 Password"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/TextView_ChangePW_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8~16자리 비밀번호 입력"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/TextView_ChangePW"/>
+        <EditText
+            android:id="@+id/EditText_ChangePW"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_ChangePW"
+            android:maxLines="1"
+            android:maxLength="16"
+            android:password="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:id="@+id/TextView_ChangePWCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P/W Check"
+            android:textSize="15sp"
+            android:layout_marginRight="50dp"/>
+        <TextView
+            android:id="@+id/TextView_ChangePWCheck_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_toRightOf="@id/TextView_ChangePWCheck"/>
+        <EditText
+            android:id="@+id/EditText_ChangePWCheck"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_ChangePWCheck"
+            android:maxLines="1"
+            android:maxLength="16"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:password="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Button_changeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="변경하기" />
+</LinearLayout>

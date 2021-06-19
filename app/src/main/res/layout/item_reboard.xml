@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="2dp"
+    android:id="@+id/messageItem_linearLayout_main_reboard">
+
+    <LinearLayout
+        android:id="@+id/messageItem_linearLayout_dest_reboard"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="이름"
+            android:id="@+id/messageItem_textView_name_reboard"/>
+
+        <TextView
+            android:text="2021-05-21"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="10sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageItem_textView_timestamp_reboard"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:text="메세지"
+            android:textSize="16sp"
+            android:textColor="#2C2B2B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageItem_textView_message_reboard"/>
+    </LinearLayout>
+</LinearLayout>
